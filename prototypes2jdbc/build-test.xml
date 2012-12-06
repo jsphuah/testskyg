@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="prototypes2jdbc">
+    <property environment="env"/>
+    <property name="TOMCAT_HOME" value="C:/Users/ryosuke/Desktop/apache-tomcat-7.0.32"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="prototypes2jdbc.classpath">
+        <pathelement location="src/main/webapp/WEB-INF/classes"/>
+        <pathelement location="target/test-classes"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/aopalliance-1.0.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-beanutils-1.8.3.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-cli-1.1.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-collections-3.1.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-el-1.0.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-fileupload-1.2.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-io-1.3.2.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-logging-1.1.1.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/commons-logging-1.1.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/geronimo-annotation_1.0_spec-1.0.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/geronimo-jpa_3.0_spec-1.0.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/geronimo-jta_1.1_spec-1.0.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/gson-2.2.2.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/javassist-3.4.ga.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/jstl-1.1.2.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/log4j-1.2.13.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/ognl-2.6.9-patch-20090427.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/ojdbc6.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/poi-3.0-FINAL.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/rabbitmq-client.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/s2-extension-2.4.45.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/s2-framework-2.4.45.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/s2-tiger-2.4.45.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/xercesImpl-2.6.2.jar"/>
+        <pathelement location="C:/Users/ryosuke/Desktop/libraly/xmlParserAPIs-2.6.2.jar"/>
+        <pathelement location="${TOMCAT_HOME}/lib/servlet-api.jar"/>
+        <pathelement location="${TOMCAT_HOME}/lib/jasper.jar"/>
+        <pathelement location="${TOMCAT_HOME}/lib/jsp-api.jar"/>
+        <pathelement location="${TOMCAT_HOME}/lib/el-api.jar"/>
+        <pathelement location="${TOMCAT_HOME}/lib/annotations-api.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/oracleMasterEntities.jar"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/oval-1.80.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/xstream-1.3.1.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="src/main/webapp/WEB-INF/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="src/main/webapp/WEB-INF/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="src/main/webapp/WEB-INF/classes">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/resources">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="src/main/webapp/WEB-INF/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="src/main/webapp/WEB-INF/classes" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="src/main/webapp/WEB-INF/classes" source="${source}" target="${target}">
+            <src path="src/main/resources"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" source="${source}" target="${target}">
+            <src path="src/test/resources"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="新規構成 (1)">
+        <java classname="" failonerror="true" fork="yes">
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </java>
+    </target>
+    <target name="Send">
+        <java classname="jp.airlink.test.Send" failonerror="true" fork="yes">
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </java>
+    </target>
+    <target name="Recv">
+        <java classname="jp.airlink.test.Recv" failonerror="true" fork="yes">
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </java>
+    </target>
+    <target name="LogicSearchAirPortMasterTest.testProc">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jp.airlink.logic.impl.LogicSearchAirPortMasterTest" todir="${junit.output.dir}"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </junit>
+    </target>
+    <target name="LogicSearchAirPortMasterTest (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="LogicSearchAirPortMasterTest" todir="${junit.output.dir}"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </junit>
+    </target>
+    <target name="LogicSearchAirPortMasterTest (2)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jp.airlink.logic.impl.LogicSearchAirPortMasterTest" todir="${junit.output.dir}"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </junit>
+    </target>
+    <target name="LogicSearchAirPortMasterTest.testGetResult">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jp.airlink.logic.impl.LogicSearchAirPortMasterTest" todir="${junit.output.dir}"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </junit>
+    </target>
+    <target name="LogicSearchAirPortMasterTest.testProc2">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jp.airlink.logic.impl.LogicSearchAirPortMasterTest" todir="${junit.output.dir}"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </junit>
+    </target>
+    <target name="LogicSearchCountryMasterTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jp.airlink.logic.impl.LogicSearchCountryMasterTest" todir="${junit.output.dir}"/>
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </junit>
+    </target>
+    <target name="Oval">
+        <java classname="jp.airlink.test.Oval" failonerror="true" fork="yes">
+            <classpath refid="prototypes2jdbc.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

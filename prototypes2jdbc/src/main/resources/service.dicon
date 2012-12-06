@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR//DTD S2Container 2.4//EN"
+	"http://www.seasar.org/dtd/components24.dtd">
+<components>
+
+  <include path="app_aop.dicon"/>
+  <component name="service-CalculateBussinesDate" class="jp.airlink.service.impl.ServiceBusinessDateCalculation">
+  	<aspect pointcut="proc">app_aop.methodLog</aspect>
+  </component>
+  <component name="service-SearchCountryMaster" class="jp.airlink.service.impl.ServiceSearchCountryMaster">
+  	<aspect pointcut="proc">app_aop.methodLog</aspect>
+  </component>
+  <component name="service-SearchAirPortMaster" class="jp.airlink.service.impl.ServiceSearchAirPortMaster">
+  	<aspect pointcut="proc">app_aop.methodLog</aspect>
+  </component>
+
+</components>

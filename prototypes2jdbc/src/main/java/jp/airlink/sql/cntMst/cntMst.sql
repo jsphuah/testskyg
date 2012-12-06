@@ -1,0 +1,6 @@
+﻿SELECT
+	*
+FROM
+	CNT_MST
+WHERE
+	CNT_CD = /*ymdList*/

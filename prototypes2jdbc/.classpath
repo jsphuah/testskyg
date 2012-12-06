@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-cli-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-el-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-fileupload-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/geronimo-annotation_1.0_spec-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/geronimo-jpa_3.0_spec-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/geronimo-jta_1.1_spec-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/javassist-3.4.ga.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/jstl-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/ognl-2.6.9-patch-20090427.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/poi-3.0-FINAL.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/rabbitmq-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/s2-extension-2.4.45.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/s2-framework-2.4.45.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/s2-tiger-2.4.45.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/xercesImpl-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ryosuke/Desktop/libraly/xmlParserAPIs-2.6.2.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/oracleMasterEntities.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/oval-1.80.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/xstream-1.3.1.jar"/>
+	<classpathentry kind="output" path="src/main/webapp/WEB-INF/classes"/>
+</classpath>

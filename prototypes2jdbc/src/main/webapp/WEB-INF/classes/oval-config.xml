@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<oval xmlns="http://oval.sf.net/oval-configuration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.sf.net/oval-configuration http://oval.sourceforge.net/oval-configuration.xsd">
+	<!--
+	define a constraint set
+	<constraintSet id="user.userid">
+		<notNull />
+		<matchPattern>
+			<pattern pattern="^[a-z0-9]{8}$" flags="0" />
+		</matchPattern>
+	</constraintSet>
+	-->
+	<!-- define checks for the acme.model.User class -->
+	<!-- overwrite=false means already defined checks for this class will not be removed -->
+	<class type="jp.airlink.test.BusinessParents" overwrite="false" applyFieldConstraintsToSetter="true">
+		<field name="name">
+			<notNull />
+			<length min="1" max="10" />
+		</field>
+		<field name="type">
+			<notNull />
+			<length min="1" max="10" />
+		</field>
+		<field name="businessChild">
+			<notNull />
+			<assertValid requireValidElements="true"/>
+		</field>
+	</class>
+	<class type="jp.airlink.test.BusinessChild" overwrite="false" applyFieldConstraintsToSetter="true">
+		<field name="child">
+			<notNull />
+			<length min="1" max="10" />
+		</field>
+	</class>
+</oval>

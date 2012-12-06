@@ -1,0 +1,7 @@
+DaoType=S2JDBC
+DefaultResourcePath=/prototypes2jdbc/src/main/resources
+DefaultRootPackage=prototypes2jdbc
+DefaultSrcPath=/prototypes2jdbc/src/main/java
+ServletPath=/prototypes2jdbc
+WebContentsRoot=src/main/webapp/
+eclipse.preferences.version=1

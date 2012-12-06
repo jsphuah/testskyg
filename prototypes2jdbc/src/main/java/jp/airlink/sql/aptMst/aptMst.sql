@@ -1,0 +1,6 @@
+﻿SELECT
+	*
+FROM
+	APT_MST
+WHERE
+	APT_CD = /*ymdList*/
