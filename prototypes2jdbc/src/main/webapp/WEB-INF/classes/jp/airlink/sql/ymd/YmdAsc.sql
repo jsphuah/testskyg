@@ -1,7 +1,0 @@
-﻿SELECT
-	*
-FROM
-	YMD
-WHERE
-	YMD IN /*ymdList*/(...)
-ORDER BY YMD ASC
